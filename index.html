@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    /* Base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Figtree', sans-serif;
+      font-style: italic;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #FFD54F; /* Background color similar to your image */
+      font-family: 'Figtree', sans-serif;
+      margin: 0;
+    }
+
+    .card-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 15px; /* Add padding around the card for mobile */
+    }
+
+    .card {
+      background-color: #fff;
+      width: 100%;
+      max-width: 295px;
+      border-radius: 15px;
+      border-top: 2px solid #060606;
+      border-left: 2px solid #060606;
+      border-right: 10px solid #060606;
+      border-bottom: 10px solid #060606;
+      overflow: hidden;
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Adds space around the image */
+    height: 200px; /* Adjust the height as needed */
+    box-sizing: border-box; /* Ensures padding doesn’t affect the height */
+    }
+
+   .card-image img {
+    width: 95%;
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block;
+    margin: 0 auto;
+    border-radius: 7px 7px;
+   }
+
+    .card-content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #FFC107;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .date {
+      color: #757575;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    h2 {
+      color: #212121;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .description {
+      color: #616161;
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .author-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .author-info img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .author-name {
+      color: #212121;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .card-content {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      .tag, .date {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-image">
+        <img src="./assets/images/illustration-article.svg" alt="Abstract Image" />
+      </div>
+      <div class="card-content">
+        <div class="tag">Learning</div>
+        <p class="date">Published 21 Dec 2023</p>
+        <h2 class="title">HTML & CSS foundations</h2>
+        <p class="description">
+          These languages are the backbone of every website, defining structure, content, and presentation.
+        </p>
+        <div class="author-info">
+          <img src="./assets/images/image-avatar.webp" alt="Author Photo">
+          <span class="author-name">Greg Hooper</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
